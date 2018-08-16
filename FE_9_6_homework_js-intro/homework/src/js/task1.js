@@ -1,11 +1,11 @@
 const moneySum = parseFloat(prompt(`Please enter amount of money`));
-const discout = parseFloat(prompt(`Please enter the discount`));
-const priceWithDiscout = moneySum - moneySum * discout / 100;
-const saved = moneySum - priceWithDiscout;
+const discount = parseFloat(prompt(`Please enter the discount`));
+const priceWithDiscount = moneySum - moneySum * discount / 100;
+const saved = moneySum - priceWithDiscount;
 
-if(moneySum > 0 && discout >= 0 && discout <= 100) {
+if(moneySum > 0 && discount >= 0 && discount <= 100) {
     console.log(`Price without discount: ` + +moneySum.toFixed(2) + `\nDiscount: ` +
-    +discout.toFixed(2) + `% \nPrice with discout: ` + +priceWithDiscout.toFixed(2) + 
+    +discount.toFixed(2) + `% \nPrice with discount: ` + +priceWithDiscount.toFixed(2) + 
     `\nSaved: ` + +saved.toFixed(2));
 } else {
     console.log(`Invalid data`);
