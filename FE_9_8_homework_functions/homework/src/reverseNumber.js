@@ -1,11 +1,10 @@
 function reverseNumber(r) {
-   const reversed = r
-   .toString()
-   .split('')
-   .reverse()
-   .join('')
-
-   return parseInt(reversed) * Math.sign(r);
+    const reversed = r
+    .toString()
+    .split('')
+    .reverse()
+    .join('')
+    return parseInt(reversed) * Math.sign(r);
 }
 
 //console.log(reverseNumber(123));
