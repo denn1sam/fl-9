@@ -24,16 +24,9 @@ function userCard(key) {
         },
         
         takeCredits(amount) {
-            if (amount <= transactionLimit && amount <= balance) {
                 balance -= amount;
             
                 fnHistoryLogs(`Withdrawal of credits`, amount, newOperationTime);
-                
-            } else {
-                console.log(`You can not take credits from the card, because 
-                            transaction limit and remaining balace are less than
-                            credits you want to take.`);
-            }
         },
         
         setTransactionLimit(amount) {
